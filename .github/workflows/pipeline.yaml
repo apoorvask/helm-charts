@@ -5,6 +5,13 @@ on:
     branches: [master]
 
 jobs:
+  pre-deploy-to-staging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test-step
+        run: |
+          echo 'test step'
   deploy-to-staging:
     runs-on: ubuntu-latest
     steps:
