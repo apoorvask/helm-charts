@@ -1,0 +1,4 @@
+global:
+  mysql_svc_name: pages-mysql-1
+mysql:    
+  test: pages-mysql-2
